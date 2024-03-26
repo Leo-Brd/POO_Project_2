@@ -1,6 +1,5 @@
 #include <iostream>
 #include "animals.hpp"
-#include "human.hpp"
 
 /*
 class Animal {
