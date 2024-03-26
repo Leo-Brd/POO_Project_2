@@ -31,7 +31,9 @@ public:
         }
     }
 
-    ~Wizard();
+    virtual ~Wizard() {
+        std::cout << "Le sorcier " << getName() << " est éliminé !" << std::endl;
+    }
 
 };
 
