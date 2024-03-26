@@ -1,8 +1,8 @@
 #include <iostream>
-#include "RPCharacter.h"
-#include "Weapon.h"
-#include "Wizard.h"
-#include "Warrior.h"
+#include "RPCharacter.hpp"
+#include "Weapon.hpp"
+#include "Wizard.hpp"
+#include "Warrior.hpp"
 
 int main() {
     // Création des deux joueurs

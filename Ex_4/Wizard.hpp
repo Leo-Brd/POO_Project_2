@@ -8,10 +8,10 @@ private:
     int mana;
 
 public:
-    Wizard(const char newName[]);
-    int getMana() const;
-    void setMana(int newMana);
-    void castSpell();
+    Wizard(const char newName[]) : RPCharacter(newName), mana(100) {}
+
+    int getMana() const { return mana; }
+
 };
 
 #endif

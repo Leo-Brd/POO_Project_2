@@ -1,8 +1,6 @@
 #ifndef WEAPON_HPP
 #define WEAPON_HPP
 
-#include <cstring>
-
 class Weapon {
 private:
     char name[20];

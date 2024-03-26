@@ -8,10 +8,10 @@ private:
     int strength;
 
 public:
-    Warrior(const char newName[]);
-    int getStrength() const;
-    void setStrength(int newStrength);
-    void useWeapon();
+    Warrior(const char newName[]) : RPCharacter(newName), strength(50) {}
+
+    int getStrength() const { return strength; }
+
 };
 
 #endif

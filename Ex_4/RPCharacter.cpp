@@ -114,6 +114,6 @@ void RPCharacter::drink_potion(int value) {
     std::cout << "Le Joueur " << getName() << " se régénère de " << value << " hp !" << std::endl;
     if (hp > 100) {
         hp = 100;
-        std::cout << "Le Joueur " << getName() << " est full vie " << std::endl;
+        std::cout<< "Le Joueur " << getName() << " est full vie " << std::endl;
     }
 }
