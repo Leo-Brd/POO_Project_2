@@ -6,6 +6,7 @@
 class Animal {
 public:
     void play();
+    void eat();
 };
 
 class Cat : public Animal {
@@ -16,6 +17,7 @@ public:
 class Dog : public Animal {
 public:
     void bark();
+    void eat();
 };
 
 #endif 

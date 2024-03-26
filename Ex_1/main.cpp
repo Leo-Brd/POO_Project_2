@@ -34,5 +34,6 @@ int main(){
     Cat c; Dog d;
     c.play(); d.play();
     c.meow(); d.bark();
+    c.eat(); d.eat();
     return 0;
 }
