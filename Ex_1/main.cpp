@@ -3,22 +3,27 @@
 class Animal {
 
     public:
-        void eat();
-        void play();
+        void play(){
+            std::cout << "L'animal joue" << std::endl;
+        };
 
 };
 
 class Cat : public Animal{
 
     public:
-        void meow();
+        void meow(){
+            std::cout << "Le chat miaule" << std::endl;
+        };
 
 };
 
 class Dog : public Animal{
 
     public:
-        void bark();
+        void bark(){
+            std::cout << "Le chien aboie" << std::endl;
+        };
 };
 
 int main(){
