@@ -6,7 +6,7 @@
 #include <vector>
 
 class RPCharacter {
-private:
+protected:
     char name[15];
     int level;
     int xp_points;
@@ -17,6 +17,7 @@ private:
     bool is_dead;
 
 public:
+    ~RPCharacter();
     RPCharacter(const char newName[]);
     RPCharacter(const char newName[], int newhp);
     const char* getName() const;
@@ -27,6 +28,8 @@ public:
     void store_weapon(Weapon weapon);
     void switch_weapon(int indice);
     void drink_potion(int value);
+    void print() const;
+    void may_delete(RPCharacter* c)
 };
 
 #endif

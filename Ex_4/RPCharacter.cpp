@@ -123,3 +123,21 @@ void RPCharacter::drink_potion(int value) {
         std::cout<< "Le Joueur " << getName() << " est full vie " << std::endl;
     }
 }
+
+void RPCharacter::print() const {
+    std::cout << "Nom: " << name << std::endl;
+    std::cout << "Niveau: " << level << std::endl;
+    std::cout << "Points d'expérience: " << xp_points << std::endl;
+    std::cout << "Points de vie: " << hp << std::endl;
+    std::cout << "Nombre d'armes: " << weapon_quantity << std::endl;
+    std::cout << "Arme utilisée: " << weapon_used.getName() << std::endl;
+    std::cout << "Est mort: " << (is_dead ? "Oui" : "Non") << std::endl;
+}
+
+RPCharacter::~RPCharacter() {
+    std::cout << "Le personnage " << name << " a été détruit." << std::endl;
+}
+
+void may_delete(RPCharacter* c) {
+    delete c;
+}

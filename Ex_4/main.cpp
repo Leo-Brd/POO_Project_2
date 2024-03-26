@@ -5,6 +5,13 @@
 #include "Warrior.hpp"
 
 int main() {
+
+    Wizard gandalf("Gandalf");
+
+    Warrior* guerrier = new Warrior("Guerrier");
+
+    Warrior may_delete(*guerrier);
+
     // Création des deux joueurs
     Warrior Noamus("Noamus");
     Wizard Antoinus("Antoinus");
