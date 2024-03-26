@@ -16,6 +16,12 @@ RPCharacter::RPCharacter(const char newName[]) {
     std::cout << "Le Joueur " << getName() << " apparait " << std::endl;
 }
 
+RPCharacter::RPCharacter(const char newName[], int newhp){
+    strncpy(name, newName, sizeof(name) - 1);
+    name[sizeof(name) - 1] = '\0';
+    hp = newhp;
+};
+
 const char* RPCharacter::getName() const {
     return name;
 }

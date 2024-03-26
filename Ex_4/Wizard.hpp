@@ -8,6 +8,7 @@ private:
     int mana;
 
 public:
+    Wizard() : RPCharacter("UnnamedWizard") {}
     Wizard(const char newName[]) : RPCharacter(newName), mana(100) {}
 
     int getMana() const { return mana; }

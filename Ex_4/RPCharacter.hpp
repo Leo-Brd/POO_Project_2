@@ -18,6 +18,7 @@ private:
 
 public:
     RPCharacter(const char newName[]);
+    RPCharacter(const char newName[], int newhp);
     const char* getName() const;
     void setName(const char* newName);
     void apply_damage(int damage_value);
