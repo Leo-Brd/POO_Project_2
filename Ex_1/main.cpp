@@ -1,5 +1,5 @@
 #include <iostream>
-
+/*
 class Animal {
 
     public:
@@ -25,6 +25,7 @@ class Dog : public Animal{
             std::cout << "Le chien aboie" << std::endl;
         };
 };
+*/
 
 int main(){
 
