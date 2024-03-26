@@ -4,20 +4,22 @@
 #include <iostream>
 
 class Animal {
-public:
-    void play();
-    void eat();
+    public:
+        void play();
+        void eat();
 };
 
 class Cat : public Animal {
-public:
-    void meow();
+    public:
+        void play();
+        void meow();
 };
 
 class Dog : public Animal {
-public:
-    void bark();
-    void eat();
+    public:
+        void play();
+        void bark();
+        void eat();
 };
 
 #endif 
